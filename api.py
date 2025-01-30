@@ -1,34 +1,20 @@
 import requests
+import os
 from dotenv import load_dotenv
 
-# Tu API Key de CoinMarketCap
-API_KEY = "c3df0e3b-abfa-4a9f-a489-0aebe889b98f"
+# Cargar las variables de entorno desde el archivo .env
+load_dotenv(override=True)
+
+# Obtener la API Key
+API_KEY = os.getenv("COINMARKETCAP_API_KEY")
+
+if not API_KEY:
+    raise ValueError("API Key not found. Please set it in the .env file.")
+
+print(f"API Key loaded successfully: {API_KEY[:5]}****")  # Para verificar sin exponer la clave completa
 
 # URL base para la API
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/"
-
-""" 
-    def obtener_precios(limit=1):
-    url = BASE_URL + "cryptocurrency/listings/latest"
-    headers = {
-        "Accepts": "application/json",
-        "X-CMC_PRO_API_KEY": API_KEY,
-    }
-    parametros = {
-        "start": "1",  # Empezar desde la primera criptomoneda
-        "limit": limit,  # Cuántas criptos obtener
-        "convert": "USD",  # Convertir los precios a dólares
-    }
-
-    response = requests.get(url, headers=headers, params=parametros)
-    
-    if response.status_code == 200:
-        data = response.json()
-        return data["data"]
-    else:
-        print("Error al obtener los datos:", response.status_code, response.text)
-        return None 
-"""
 
 def obtener_precio_crypto(simbolo):
     """
