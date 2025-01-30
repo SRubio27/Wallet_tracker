@@ -2,3 +2,4 @@ docs/*
 !docs/.gitkeep
 .venv
 __pycache__
+.env
