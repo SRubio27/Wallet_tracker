@@ -17,16 +17,16 @@ Wallet Tracker is a Python application designed for tracking expenses and income
 
 ### Installation Steps 🚀
 1. Clone the repository:
-   ```sh
+   ```
    git clone https://github.com/SRubio27/Wallet_tracker.git
    cd Wallet_tracker
    ```
 2. Install the required dependencies:
-   ```sh
+   ```
    pip install -r requirements.txt
    ```
 3. Run the application:
-   ```sh
+   ```
    python main.py
    ```
 
@@ -43,4 +43,4 @@ If you want to contribute, follow these steps:
 5. 🔄 Open a Pull Request.
 
 ## License 📄
-You are free to use and modify this project. See the LICENSE file for more details. 🎉
+You are free to use and modify this project. 🎉
