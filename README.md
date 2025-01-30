@@ -1,7 +1,7 @@
 # Wallet Tracker 💰
 
 ## Description 📌
-Wallet Tracker is a Python application designed for tracking expenses and income, allowing users to efficiently manage their finances. 📊
+Wallet Tracker is a Python application designed for tracking his crypto wallets. 📊
 
 ## Features ✨
 - ✅ Record income and expense transactions.
